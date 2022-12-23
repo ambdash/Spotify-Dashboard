@@ -1,0 +1,173 @@
+@font-face {
+font-family: 'Gotham-b';
+src: url('GothamBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'Gotham-M';
+src: url('GothamMedium.ttf') format('truetype')
+}
+
+*, html, body {
+font-family: 'Gotham-b';
+}
+
+body {
+  background-color: #535353;
+  margin: 0.1%;
+}
+
+.description_container {
+  border: 6px groove;
+  border-color: #535353;
+  border-radius: 10px;
+  background-color: black;
+  margin: 20px;
+  padding: 3px;
+  padding-left: 10px;
+  position: relative;
+  box-shadow: 3px 3px 3px #a8b2a8;
+}
+/* 4 top cards */
+.card_container {
+  border-radius: 10px;
+  background-color: #535353;
+  margin: 20px;
+  padding: 3px;
+  position: relative;
+  box-shadow: 2px 2px 2px #a8b2a8;
+}
+
+.dcc_compon {
+  margin: 0;
+  padding: 10px;
+  width: calc(100%- 10px);
+}
+
+.fix_label {
+font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 10px;  /* насколько фильтр ниже заголовка */
+  margin-bottom: 0px;
+  width: calc(100%- 10px);
+}
+
+.flex-display {
+  display: flex;
+}
+
+.container-display {
+  display: flex;
+}
+
+#header {
+  align-items: center;
+}
+
+#refresh-data {
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  text-transform: none;
+  font-size: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+#dashboard
+#title {
+  text-align: center;
+}
+
+#title1 {
+  text-align: center;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#custom_dropdown
+/* border on focus - default is blue
+ * shadow box around input box.  default is blue
+ */
+.Select--multi .Select-value {
+  background-color: #fcba03;
+  border-color: #e3a700;
+  color: #fff;
+}
+.is-focused:not(.is-open) > .Select-control {
+  border-color: #1ed760;;
+  box-shadow: 0 0 0 2px green;
+}
+.Select--multi .Select-value {
+  background-color: #1ed760;
+  border-color: #fff;
+  color: #fff;
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+  background-color: #535353;
+  color: white !important;
+  font: 'Gotham-b'
+}
+
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: black;
+}
+
+/* dropdown menu options */
+.VirtualizedSelectOption {
+    background-color: black;
+    color: white;
+ }
+
+#select_years
+.rc-slider-track {
+  background-color: white;
+}
+
+.rc-slider-handle {
+  background-color: #1ed760;
+  border-color: white;
+}
+
+.rc-slider-handle:hover {
+  border-color: #535353;
+}
+
+.rc-slider-handle-active:active {
+  border-color: red;
+}
+
+.rc-slider-dot-active {
+  border-color: #1ed760;
+  border: solid 4px #1ed760;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #535353 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #535353;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white !important;
+}
